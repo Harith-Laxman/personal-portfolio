@@ -9,7 +9,7 @@ interface ContactTemplateProps {
 
 export default function ContactTemplate({ contentRef, inView }: ContactTemplateProps) {
   return (
-    <section id="contact" className="py-24 md:py-32 px-6 transition-colors duration-300">
+    <section id="contact" className="py-24 md:py-32 px-6 transition-colors duration-300 flex flex-col items-center">
       <div className="max-w-3xl mx-auto text-center">
         <SectionHeading title="CONTACT" subtitle="Let's work together" />
 

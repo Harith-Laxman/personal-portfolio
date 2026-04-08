@@ -12,7 +12,7 @@ interface FooterTemplateProps {
 
 export default function FooterTemplate({ socials }: FooterTemplateProps) {
   return (
-    <footer className="section-alt py-12 px-6 border-t border-themed transition-colors duration-300">
+    <footer className="section-alt py-12 px-6 border-t border-themed transition-colors duration-300 flex flex-col items-center">
       <div className="max-w-4xl mx-auto flex flex-col items-center gap-6">
         <div className="flex gap-6">
           {socials.map((social) => {

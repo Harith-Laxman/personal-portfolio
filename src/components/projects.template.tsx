@@ -86,7 +86,7 @@ interface ProjectsTemplateProps {
 
 export default function ProjectsTemplate({ projects, renderCard }: ProjectsTemplateProps) {
   return (
-    <section id="projects" className="section-alt py-24 md:py-32 px-6 transition-colors duration-300">
+    <section id="projects" className="section-alt py-24 md:py-32 px-6 transition-colors duration-300 flex flex-col items-center">
       <div className="max-w-4xl mx-auto">
         <SectionHeading title="PROJECTS" subtitle="Some things I've built" />
 

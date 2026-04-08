@@ -15,7 +15,7 @@ interface SkillsTemplateProps {
 
 export default function SkillsTemplate({ gridRef, inView, skills }: SkillsTemplateProps) {
   return (
-    <section id="skills" className="py-24 md:py-32 px-6 transition-colors duration-300">
+    <section id="skills" className="py-24 md:py-32 px-6 transition-colors duration-300 flex flex-col items-center">
       <div className="max-w-4xl mx-auto">
         <SectionHeading title="SKILLS" subtitle="Technologies I work with" />
 

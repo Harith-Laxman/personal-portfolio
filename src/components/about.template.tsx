@@ -9,8 +9,8 @@ interface AboutTemplateProps {
 
 export default function AboutTemplate({ contentRef, inView }: AboutTemplateProps) {
   return (
-    <section id="about" className="section-alt py-24 md:py-32 px-6 transition-colors duration-300">
-      <div className="max-w-4xl mx-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full px-4">
+    <section id="about" className="section-alt py-24 md:py-32 px-6 transition-colors duration-300 flex flex-col items-center overflow-hidden">
+      <div className="max-w-xl w-full p-5 rounded-xl">
         <SectionHeading title="ABOUT" subtitle="A bit about me and what I do" />
 
         <div
