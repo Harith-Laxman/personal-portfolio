@@ -1,0 +1,35 @@
+.blur-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blur-text__segment {
+  display: inline-block;
+}
+
+.blur-text__segment--hidden {
+  filter: blur(10px);
+  opacity: 0;
+}
+
+.blur-text__segment--visible {
+  filter: blur(0px);
+  opacity: 1;
+  transition-property: filter, opacity, transform;
+  transition-timing-function: ease-out;
+  transition-duration: 0.5s;
+}
+
+.blur-text__segment--from-top.blur-text__segment--hidden {
+  transform: translateY(-20px);
+}
+
+.blur-text__segment--from-bottom.blur-text__segment--hidden {
+  transform: translateY(20px);
+}
+
+.blur-text__segment--from-top.blur-text__segment--visible,
+.blur-text__segment--from-bottom.blur-text__segment--visible {
+  transform: translateY(0);
+}

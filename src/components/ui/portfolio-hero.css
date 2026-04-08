@@ -1,0 +1,24 @@
+.hero-signature {
+  font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+}
+
+.hero-name {
+  color: #C3E41D;
+  font-family: 'Fira Code', monospace;
+}
+
+.hero-tagline {
+  font-family: 'Antic', sans-serif;
+}
+
+.theme-toggle-thumb {
+  transition: transform 0.3s;
+}
+
+.theme-toggle-thumb--dark {
+  transform: translateX(2rem);
+}
+
+.theme-toggle-thumb--light {
+  transform: translateX(0);
+}

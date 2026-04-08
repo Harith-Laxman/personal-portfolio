@@ -1,0 +1,21 @@
+.contact__content {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.contact__content--hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.contact__content--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact__text {
+  font-family: 'Antic', sans-serif;
+}
+
+.contact__cta {
+  background-color: #C3E41D;
+}

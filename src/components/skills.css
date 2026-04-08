@@ -1,0 +1,14 @@
+.skill-card {
+  transition-property: opacity, transform, border-color, background-color;
+  transition-timing-function: ease-out;
+}
+
+.skill-card--hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.skill-card--visible {
+  opacity: 1;
+  transform: translateY(0);
+}

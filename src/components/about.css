@@ -1,0 +1,17 @@
+.about__content {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.about__content--hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.about__content--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about__bio {
+  font-family: 'Antic', sans-serif;
+}

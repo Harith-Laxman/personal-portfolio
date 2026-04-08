@@ -1,0 +1,18 @@
+.project-card {
+  transition-property: opacity, transform, border-color, background-color;
+  transition-timing-function: ease-out;
+}
+
+.project-card--hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.project-card--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card__description {
+  font-family: 'Antic', sans-serif;
+}

@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #C3E41D;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "Fira Code", monospace;
+  --font-display: "Antic", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Light mode (default when .dark is removed) */
+body {
+  font-family: var(--font-sans);
+  background-color: #fafafa;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode */
+.dark body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Section alternate backgrounds */
+.section-alt {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+}
+.dark .section-alt {
+  background-color: #080808;
+}
+
+/* Card backgrounds */
+.card-bg {
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+}
+.dark .card-bg {
+  background-color: #0a0a0a;
+}
+
+/* Text colors for theme */
+.text-body {
+  color: #525252;
+  transition: color 0.3s;
+}
+.dark .text-body {
+  color: #a3a3a3;
+}
+
+.text-heading {
+  color: #1a1a1a;
+  transition: color 0.3s;
+}
+.dark .text-heading {
+  color: #ffffff;
+}
+
+.text-muted {
+  color: #737373;
+  transition: color 0.3s;
+}
+.dark .text-muted {
+  color: #525252;
+}
+
+/* Border colors */
+.border-themed {
+  border-color: #e5e5e5;
+  transition: border-color 0.3s;
+}
+.dark .border-themed {
+  border-color: #262626;
+}
+
+/* Nav menu bg */
+.menu-bg {
+  background-color: #fafafa;
+  transition: background-color 0.3s;
+}
+.dark .menu-bg {
+  background-color: #000000;
+}
+
+/* Selection */
+::selection {
+  background-color: #C3E41D;
+  color: #000000;
+}
